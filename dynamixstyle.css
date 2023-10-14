@@ -8,12 +8,63 @@ body {
     background-color: #000000;
 }
 
-header {
+/* Style the navigation bar */
+nav {
     background-color: #000000;
     color: #fff;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px 0px 20px;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
 }
+/* Add margin to the "Contact Us" link */
+.nav-links li:last-child {
+    margin-right: 20px;
+}
+
+/* Style the logo */
+.logo img {
+    width: 100%; /* Make sure the logo scales properly */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+/* Style the navigation links */
+.nav-links {
+    margin-top: 0px;
+    margin-bottom: -1px;
+    list-style: none;
+    display: flex;
+    margin-right:3% ;
+    padding: 0;
+}
+
+
+.nav-links li {
+    
+    margin: 20px;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FF1A; /* Change color on hover, for example, LinkedIn blue */
+}
+
+/* Add padding to the page content to prevent it from being hidden behind the fixed navigation bar */
+body {
+    margin-top: 60px; /* Adjust this value as needed */
+}
+
 
 header h1 {
     font-size: 36px;
@@ -40,27 +91,9 @@ section {
     border-radius: 5px;
 }
 
-/* Add specific styles for sections, portfolio items, and services as needed */
 
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    header {
-        text-align: left;
-    }
 
-    header h1 {
-        font-size: 24px;
-    }
 
-    nav ul {
-        text-align: center;
-    }
-
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-}
 
 /*welcome section */
 #welcomeheading{
@@ -88,9 +121,8 @@ section {
 /* Style the video background */
 .video-background {
     position: absolute;
-    top: 2rem;
+    top: 4rem;
     left: 2rem;
-    
     width: 95%;
     height: 100%;
     overflow: hidden;
@@ -125,4 +157,35 @@ section {
 
 .social-media a:hover {
     color: #0077B5; /* Change color on hover, for example, LinkedIn blue */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                                                            /* Responsivenes */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
 }
