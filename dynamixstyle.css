@@ -15,7 +15,7 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px 0px 20px;
+    padding: 10px 20px 0px 15px;
     position: fixed;
     top: 0px;
     width: 100%;
@@ -142,28 +142,45 @@ section {
     padding: 40px;
 }
 
+
+
+
+
+
+
+
 /* Style the social media links */
-.social-media {
-    margin-top: 20px;
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
-.social-media a {
-    font-size: 24px;
-    margin: 0 10px;
-    color: #fff;
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 10px;
     text-decoration: none;
-    transition: color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
 }
 
-.social-media a:hover {
-    color: #0077B5; /* Change color on hover, for example, LinkedIn blue */
+.social-link i {
+    font-size: 20px;
 }
 
-
-
-
-
-
+.social-link:hover {
+    background-color: #00FF00; /* Green color on hover */
+    transform: scale(1.2); /* Slight scale up effect on hover */
+}
 
 
 
@@ -176,6 +193,12 @@ section {
 
                                                                             /* Responsivenes */
 @media (max-width: 768px) {
+    .video-background video {
+        
+    }
+}
+
+@media (max-width: 768px) {
     nav {
         flex-direction: column;
         align-items: center;
@@ -187,5 +210,23 @@ section {
     
     .nav-links li {
         margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .social-links {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .social-link i {
+        font-size: 20px;
     }
 }
