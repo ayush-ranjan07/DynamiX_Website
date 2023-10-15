@@ -1,0 +1,216 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inria Sans;
+    background-color: #000000;
+    color: white;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 0% 1.5%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Style the logo */
+.logo img {
+    width: 100%; /* Make sure the logo scales properly */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+/* Style the navigation links */
+.nav-links {
+    margin-top: 0px;
+    margin-bottom: -1px;
+    list-style: none;
+    display: flex;
+    margin-right:2.5% ;
+    padding: 0;
+}
+
+
+.nav-links li {
+    
+    margin: 20px;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FF1A; /* Change color on hover, for example, LinkedIn blue */
+}
+
+/* Add padding to the page content to prevent it from being hidden behind the fixed navigation bar */
+body {
+    margin-top: 60px; /* Adjust this value as needed */
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the social media links */
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-link i {
+    font-size: 20px;
+}
+
+.social-link:hover {
+    background-color: #00FF00; /* Green color on hover */
+    transform: scale(1.2); /* Slight scale up effect on hover */
+}
+
+
+
+
+
+
+
+
+/* Style for the blog welcome */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; /* Center align text */
+}
+
+/* Style for the h1 element */
+.blog-container h1 {
+    font-size: 36px;
+    color: #ffffff; /* Blue color */
+}
+
+/* Style for the p element */
+.blog-container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #858585; /* Dark gray color */
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+
+
+
+                                                                            /* Responsivenes */
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+    }
+    
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .social-links {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 30px;
+    }
+
+    .social-link i {
+        font-size: 20px;
+    }
+}   
