@@ -6,7 +6,6 @@ body, h1, h2, p {
 body {
     font-family: Inria Sans;
     background-color: #000000;
-    color: white;
 }
 
 /* Style the navigation bar */
@@ -33,17 +32,17 @@ nav {
 /* Style the navigation links */
 .nav-links {
     margin-top: 0px;
-    margin-bottom: -1px;
+    margin-bottom: 1vh;
     list-style: none;
     display: flex;
-    margin-right:2.5% ;
+    margin-right:2.8% ;
     padding: 0;
 }
 
 
 .nav-links li {
     
-    margin: 20px;
+    margin: 1.2vw;
 
 }
 
@@ -93,10 +92,28 @@ section {
 
 
 
+/* Style the content */
+.content {
+    position: relative;
+    z-index: 1; /* Place it above the video */
+    padding: 40px;
+}
 
-
-
-
+/* Style the text presnt at the top of video in the background */
+.text-overlay {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: #fff;
+    text-align: center;
+}
 
 
 
@@ -148,21 +165,23 @@ section {
 
 
 
-
 /* Style for the blog welcome */
 .blog-container {
     max-width: 800px;
     margin: 0 auto;
+    height: 60vh;
     padding: 20px;
     text-align: center; /* Center align text */
+    margin-bottom: 20vh;
 }
 
 /* Style for the h1 element */
 .blog-container h1 {
     font-size: 36px;
+   
     color: #ffffff; /* Blue color */
-}
 
+}
 /* Style for the p element */
 .blog-container p {
     font-size: 1.5rem;
@@ -176,6 +195,78 @@ section {
 
 
 
+                                                                            /* BLOGS */
+.blogs{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 8vw;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.blogsInfo{
+    position:absolute;
+    width: 8vw;
+    height: 20vh;
+    top: 1ch;
+    right: 1vw;
+    color: white;
+    background-color: rgb(0, 0, 0);
+}
+
+.blogsInfo .date{
+    color: white;
+    z-index: 100;
+}
+
+.blogsImages{
+    width: 45vw;
+    height: 50vh;
+    position: relative;
+    
+    top: -26vh;
+    right: -40vw;
+    background-color: rgb(255, 0, 0);
+    z-index: -1;
+}
+
+
+.blogsAfter{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 50vh;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 8vw;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.blogsInfoAfter{
+    position:absolute;
+    width: 8vw;
+    height: 20vh;
+    top: 1ch;
+    right: 1vw;
+    background-color: rgb(0, 0, 0);
+}
+
+.blogsImagesAfter{
+    width: 45vw;
+    height: 50vh;
+    position: relative;
+    
+    top: -26vh;
+    right: -40vw;
+    background-color: rgb(255, 0, 0);
+    z-index: -1;
+}
+
 
 
 
@@ -186,6 +277,7 @@ section {
     nav {
         flex-direction: column;
         align-items: center;
+        margin-top: 2vh;
     }
     
     .nav-links {
@@ -193,7 +285,7 @@ section {
     }
     
     .nav-links li {
-        margin: 10px 0;
+        margin: 1vw;
     }
 }
 
@@ -207,10 +299,10 @@ section {
     .social-link {
         width: 40px;
         height: 40px;
-        margin-bottom: 30px;
+        margin-bottom: 2vh;
     }
 
     .social-link i {
         font-size: 20px;
     }
-}   
+}
