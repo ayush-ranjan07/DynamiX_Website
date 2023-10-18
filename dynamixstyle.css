@@ -194,7 +194,89 @@ section {
 
 
 
-                                                                            /* Responsivenes */
+ /* Add the CSS styles you already have */
+
+/* Style for the footer */
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2vh 0;
+    text-align: center;
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw; /* 90% of the viewport width */
+    margin: 0 auto;
+    padding: 0 2vw; /* 2% of the viewport width on the sides */
+    align-items: center;
+}
+
+/* Style for the footer sections */
+.footer-section {
+    width: 30%; /* Each section takes up 30% of the available width */
+    padding: 0 1vw; /* 1% of the viewport width on the sides */
+}
+
+/* Style for the footer navigation links */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-nav ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer logo */
+.footer-logo img {
+    max-width: 100%; /* Ensure the logo fits within the container */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto; /* Center align the logo */
+}
+
+/* Style for the footer services links */
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.navigateHeading{
+    text-align: left;
+}
+
+.serviceHeading{
+    text-align: right;
+}
+.footer-services ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-services ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer bottom (copyright) */
+.footer-bottom {
+    text-align: center;
+    padding: 1vh 0;
+    background-color: #00ff009d;
+    font-size: 1.5vw; /* 1.5% of the viewport width for font size */
+}
+
+
+
+/* Responsivenes */
 
 
 @media (max-width: 768px) {
