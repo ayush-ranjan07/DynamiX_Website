@@ -1,0 +1,422 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inria Sans;
+    background-color: #000000;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 0% 1.5%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Style the logo */
+.logo img {
+    width: 100%; /* Make sure the logo scales properly */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+/* Style the navigation links */
+.nav-links {
+    margin-top: 0px;
+    margin-bottom: 1vh;
+    list-style: none;
+    display: flex;
+    margin-right:2.8% ;
+    padding: 0;
+}
+
+
+.nav-links li {
+    
+    margin: 1.2vw;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FF1A; /* Change color on hover, for example, LinkedIn blue */
+}
+
+/* Add padding to the page content to prevent it from being hidden behind the fixed navigation bar */
+body {
+    margin-top: 60px; /* Adjust this value as needed */
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Style the content */
+.content {
+    position: relative;
+    z-index: 1; /* Place it above the video */
+    padding: 40px;
+}
+
+/* Style the text presnt at the top of video in the background */
+.text-overlay {
+    position: absolute;
+    top: -5%;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.658);
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* Style the social media links */
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-link i {
+    font-size: 20px;
+}
+
+.social-link:hover {
+    background-color: #00FF00; /* Green color on hover */
+    transform: scale(1.2); /* Slight scale up effect on hover */
+}
+
+
+
+
+
+
+
+/* Style for the blog welcome */
+.blog-container {
+    max-width: 800px;
+    margin: 0 auto;
+    height: 60vh;
+    padding: 20px;
+    text-align: center; /* Center align text */
+    margin-bottom: 20vh;
+}
+
+/* Style for the h1 element */
+.blog-container h1 {
+    font-size: 36px;
+   
+    color: #ffffff; /* Blue color */
+
+}
+/* Style for the p element */
+.blog-container p {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #858585; /* Dark gray color */
+    margin-top: 20px;
+    text-align: justify;
+}
+
+
+
+
+
+                                                                            /* BLOGS */
+.blogs{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 8vw;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.blogsInfo{
+    position:absolute;
+    width: 8vw;
+    height: 20vh;
+    top: 1ch;
+    right: 1vw;
+    color: white;
+    font-size: 2.5vh;
+    background-color: rgb(0, 0, 0);
+}
+
+
+
+.blogsImages{
+    width: 45vw;
+    height: 50vh;
+    position: relative;
+    
+    top: -68vh;
+    right: -40vw;
+    background-color: rgb(255, 0, 0);
+    z-index: -8;
+}
+
+.blogsContent{
+    width: 32vw;
+    height: 40vh;
+    position: relative;
+    padding-left: 2vw;
+    padding-top: 2vh;
+}
+
+.blogsContent p{
+    text-align: justify;
+}
+
+.readBlog{
+    background-color: #00FF00;
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 1.5%;
+    position: relative;
+    bottom: -4%;
+    border: transparent;
+    font-weight: bold;
+    color: #000000e8;
+}
+
+.readBlog:hover{
+    color:rgb(255, 255, 255) ;
+    box-shadow: #000000;
+    
+}
+
+.blogsAfter{
+    width: 50vw;
+    height: 50vh;
+    margin-top: 50vh;
+    margin-bottom: 10vh;
+    position: relative;
+    left: 8vw;
+    background-color: white;
+    z-index: 1;
+
+}
+
+.blogsInfoAfter{
+    position:absolute;
+    width: 8vw;
+    height: 20vh;
+    top: 1ch;
+    right: 1vw;
+    font-size: 2.5vh;
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+.blogsImagesAfter{
+    width: 45vw;
+    height: 50vh;
+    position: relative;
+    top: -68vh;
+    
+    right: -40vw;
+    background-color: rgb(255, 0, 0);
+    z-index: -1;
+}
+
+
+
+
+
+
+
+
+/* Style for the footer */
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2vh 0;
+    margin-top: 5vh;
+    text-align: center;
+    
+    
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw; /* 90% of the viewport width */
+    margin: 0 auto;
+    padding: 0 2vw; /* 2% of the viewport width on the sides */
+    align-items: center;
+}
+
+/* Style for the footer sections */
+.footer-section {
+    width: 30%; /* Each section takes up 30% of the available width */
+    padding: 0 1vw; /* 1% of the viewport width on the sides */
+}
+
+/* Style for the footer navigation links */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-nav ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer logo */
+.footer-logo img {
+    max-width: 100%; /* Ensure the logo fits within the container */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto; /* Center align the logo */
+}
+
+/* Style for the footer services links */
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.navigateHeading{
+    text-align: left;
+}
+
+.serviceHeading{
+    text-align: right;
+}
+.footer-services ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-services ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer bottom (copyright) */
+.footer-bottom {
+    text-align: center;
+    padding: 1vh 0;
+    background-color: #00ff009d;
+    font-size: 1.5vw; /* 1.5% of the viewport width for font size */
+}
+
+                                                                            /* Responsivenes */
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+    }
+    
+    .nav-links li {
+        margin: 1vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .social-links {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 2vh;
+    }
+
+    .social-link i {
+        font-size: 20px;
+    }
+}
