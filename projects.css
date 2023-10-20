@@ -195,44 +195,80 @@ section {
 
 
 
-                                                                            /* BLOGS */
-.blogs{
-    width: 50vw;
+                                                                            /* PROJECTS */
+.projects{
+    width: 86vw;
     height: 50vh;
     margin-top: 10vh;
     margin-bottom: 10vh;
     position: relative;
     left: 8vw;
-    background-color: white;
+    background-color: transparent;
     z-index: 1;
 
 }
 
-.blogsInfo{
-    position:absolute;
-    width: 8vw;
-    height: 20vh;
-    top: 1ch;
-    right: 1vw;
-    color: white;
-    font-size: 2.5vh;
-    background-color: rgb(0, 0, 0);
-}
 
-
-
-.blogsImages{
-    width: 45vw;
-    height: 50vh;
-    position: relative;
+/* Hand-drawn Highlighter Style */
+.highlight {
+    background-color: rgba(255, 255, 0, 0.479); /* Set the background color to simulate a highlighter effect */
+    padding: 0px; /* Add padding for spacing around the highlighted text */
+    border-radius: 5px; /* Add rounded corners for a softer look */
     
-    top: -68vh;
-    right: -40vw;
-    background-color: rgb(255, 0, 0);
-    z-index: -8;
 }
 
-.blogsContent{
+
+/* Animated Highlight Style */
+.animated {
+    background-image: linear-gradient(90deg, transparent, #000000, transparent); /* Create a gradient background */
+    padding: 5px;
+    
+    background-size: 200% 100%; /* Twice as wide to allow animation */
+    animation: shimmer 5s linear infinite; /* Animation that moves the gradient */
+}
+
+
+
+@keyframes shimmer {
+    0% {
+        background-position: 200% 0; /* Start from the right */
+    }
+    100% {
+        background-position: -200% 0; /* Move to the left */
+    }
+}
+
+/* Origami Fold Highlight Style */
+.origami-fold {
+    background-image: linear-gradient(45deg, transparent 49.5%, #ffcc00 49.5%, #ffcc00 50.5%, transparent 50.5%); /* Diagonal lines */
+    background-size: 10px 10px; /* Adjust the size of the lines */
+    padding: 3px; /* Add padding for spacing around the highlighted text */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+}
+
+.glowing {
+    background-color: #000000; /* Set the background color for the highlight */
+    padding: 3px; /* Add padding for spacing around the highlighted text */
+    border-radius: 10px; /* Add rounded corners for a softer look */
+    box-shadow: 0 0 10px rgba(255, 204, 0, 0.5); /* Apply a glowing outer shadow */
+}
+
+
+.projectsImages {
+    width: 40vw;                /* Set width to 40% of the viewport width */
+    height: 80vh;               /* Set height to 80% of the viewport height */
+    position: absolute;         /* Positioned absolutely on the page */
+    bottom: 0;                 /* Positioned at the bottom */
+    right: 2vw;                /* Positioned 2% from the right edge */
+    background-color: #FF0000;  /* Background color in a vibrant red tone */
+    border-radius: 15px;       /* Rounded corners with a 15px radius */
+    transition: transform 0.8s ease-in-out;  /* Smooth animation on hover */
+}
+.projectsImages:hover {
+    transform: scale(1.05); /* Enlarge image on hover for a subtle animation */
+}
+
+.projectsContent{
     width: 32vw;
     height: 40vh;
     position: relative;
@@ -240,60 +276,62 @@ section {
     padding-top: 2vh;
 }
 
-.blogsContent p{
+.projectsContent p{
     text-align: justify;
+    position: absolute;
+    top: -22vh;
+    color: white;
+    font-size: larger;
+    font-stretch: extra-expanded;
 }
 
-.readBlog{
-    background-color: #00FF00;
-    border-radius: 5px;
-    font-size: 100%;
-    padding: 1.5%;
-    position: relative;
-    bottom: -4%;
-    border: transparent;
-    font-weight: bold;
-    color: #000000e8;
+/* Stylish .projectsview Class */
+
+.projectsview {
+    background-color: #00FF00;      /* A vibrant green background color */
+    border-radius: 10px;            /* Slightly rounded corners for a soft look */
+    font-size: 1rem;               /* Adjusted font size for readability */
+    padding: 1.5%;                 /* Padding around the content */
+    position: relative;            /* Positioned relatively */
+    bottom: -10px;                 /* Slightly lifted for a subtle effect */
+    border: 2px solid #00FF00;     /* A visible border with the same color as the background */
+    font-weight: bold;             /* Bold text */
+    color: rgba(0, 0, 0, 0.9);     /* Slightly transparent black text for contrast */
+    font-stretch: extra-expanded;
 }
 
-.readBlog:hover{
+
+.projectsview:hover{
     color:rgb(255, 255, 255) ;
     box-shadow: #000000;
     
 }
 
-.blogsAfter{
+.projectsAfter{
     width: 50vw;
     height: 50vh;
     margin-top: 50vh;
     margin-bottom: 10vh;
     position: relative;
     left: 8vw;
-    background-color: white;
+    
     z-index: 1;
 
 }
 
-.blogsInfoAfter{
-    position:absolute;
-    width: 8vw;
-    height: 20vh;
-    top: 1ch;
-    right: 1vw;
-    font-size: 2.5vh;
-    background-color: rgb(0, 0, 0);
-    color: white;
-}
 
-.blogsImagesAfter{
-    width: 45vw;
-    height: 50vh;
-    position: relative;
+
+.projectsImagesAfter{
+    width: 40vw;                /* Set width to 40% of the viewport width */
+    height: 80vh;               /* Set height to 80% of the viewport height */
+    position: absolute;         /* Positioned absolutely on the page */
+    bottom: 0;                 /* Positioned at the bottom */
+    right: 2vw;                /* Positioned 2% from the right edge */
+    background-color: #FF0000;  /* Background color in a vibrant red tone */
+    border-radius: 15px;       /* Rounded corners with a 15px radius */
+    transition: transform 0.8s ease-in-out;  /* Smooth animation on hover */
     top: -68vh;
-    
-    right: -40vw;
     background-color: rgb(255, 0, 0);
-    z-index: -1;
 }
 
 
