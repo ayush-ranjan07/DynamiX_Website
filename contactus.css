@@ -1,0 +1,360 @@
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Inria Sans;
+    background-color: #000000;
+}
+
+/* Style the navigation bar */
+nav {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1% 2% 0% 1.5%;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* Style the logo */
+.logo img {
+    width: 100%; /* Make sure the logo scales properly */
+    max-width: 200px; /* Limit the maximum width */
+}
+
+/* Style the navigation links */
+.nav-links {
+    margin-top: 0px;
+    margin-bottom: 1vh;
+    list-style: none;
+    display: flex;
+    margin-right:2.8% ;
+    padding: 0;
+}
+
+
+.nav-links li {
+    
+    margin: 1.2vw;
+
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #00FF1A; /* Change color on hover, for example, LinkedIn blue */
+}
+
+/* Add padding to the page content to prevent it from being hidden behind the fixed navigation bar */
+body {
+    margin-top: 60px; /* Adjust this value as needed */
+}
+
+
+header h1 {
+    font-size: 36px;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+
+
+
+
+/* Style the social media links */
+.social-links {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #333;
+    background-color: #fff;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.social-link i {
+    font-size: 20px;
+}
+
+.social-link:hover {
+    background-color: #00FF00; /* Green color on hover */
+    transform: scale(1.2); /* Slight scale up effect on hover */
+}
+
+
+/* Style for the footer */
+.site-footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 2vh 0;
+    margin-top: 5vh;
+    text-align: center;
+    
+    
+}
+
+/* Style for the footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    max-width: 90vw; /* 90% of the viewport width */
+    margin: 0 auto;
+    padding: 0 2vw; /* 2% of the viewport width on the sides */
+    align-items: center;
+}
+
+/* Style for the footer sections */
+.footer-section {
+    width: 30%; /* Each section takes up 30% of the available width */
+    padding: 0 1vw; /* 1% of the viewport width on the sides */
+}
+
+/* Style for the footer navigation links */
+.footer-nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+}
+
+.footer-nav ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer logo */
+.footer-logo img {
+    max-width: 100%; /* Ensure the logo fits within the container */
+    display: block; /* Remove any extra spacing around the image */
+    margin: 0 auto; /* Center align the logo */
+}
+
+/* Style for the footer services links */
+.footer-services ul {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.navigateHeading{
+    text-align: left;
+}
+
+.serviceHeading{
+    text-align: right;
+}
+.footer-services ul li {
+    margin-bottom: 1vh; /* 1% of the viewport height spacing */
+}
+
+.footer-services ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Style for the footer bottom (copyright) */
+.footer-bottom {
+    text-align: center;
+    padding: 1vh 0;
+    background-color: #00ff009d;
+    font-size: 1.5vw; /* 1.5% of the viewport width for font size */
+}
+
+                                                                            /* Responsivenes */
+
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 2vh;
+    }
+    
+    .nav-links {
+        margin-top: 20px;
+    }
+    
+    .nav-links li {
+        margin: 1vw;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .social-links {
+        left: 10px;
+        bottom: 10px;
+    }
+
+    .social-link {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 2vh;
+    }
+
+    .social-link i {
+        font-size: 20px;
+    }
+}
+
+.contact_div {
+    margin-top: 8vh;
+    background-color: #000000;
+    padding-top: 10%;
+}
+
+.contact {
+    color: #fff;
+    margin-left: 15%;
+    margin-top: 0%;
+    font-size: 3rem; /* Adjusted to rem units for better responsiveness */
+}
+
+.para1 {
+    color: #fff;
+    margin-left: 12.5%;
+    margin-top: 1%;
+    font-size: 2rem; /* Adjusted to rem units for better responsiveness */
+}
+
+.Email1 {
+    color: #fff;
+    margin-left: 20%;
+    margin-top: 5%;
+    font-size: 2rem; /* Adjusted to rem units for better responsiveness */
+}
+
+.Email2 {
+    color: #fff;
+    margin-left: 13%;
+    margin-top: 0%;
+    font-size: 2rem; /* Adjusted to rem units for better responsiveness */
+}
+
+.phone1 {
+    color: #fff;
+    margin-left: 20%;
+    margin-top: 2%;
+    font-size: 2rem; /* Adjusted to rem units for better responsiveness */
+}
+
+#phone2 {
+    color: #fff;
+    margin-left: 15.5%;
+    margin-top: 0%;
+    font-size: 2rem; /* Adjusted to rem units for better responsiveness */
+}
+
+
+.section1{
+    margin-left: 45%;
+    margin-top: -40%;
+    background-color:#242424;
+}
+
+.section2{
+    background-color: #000000;
+    margin: 8%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    margin-right: 5%;
+    border-radius: 5%;
+    margin-top: 3%;
+}
+
+.input{
+    color:#fff
+}
+
+.space{
+    margin-left: 10%;
+    height: 25px;
+    width: 60%;
+    
+}
+
+.div{
+    margin-left: 10%;
+    margin-bottom: -10%;
+}
+
+.div1{
+    font-size: 3vh;
+    margin-top: 10%;
+}
+
+.div2{
+    margin-top: 5%;
+    font-size: 3.1vh;
+}
+
+.div3{
+    margin-top: 5%;
+    font-size: 2.8vh;
+}
+
+.div4{
+    margin-top: 5%;
+    font-size: 2.8vh;
+}
+
+.textarea{
+    margin-top: 5%;
+    height: 30%;
+    width: 65vh;
+}
+
+.submit{
+    margin-top: 5%;
+    margin-left: 30%;
+    font-size: 3vh;
+    margin-bottom: 15%;
+    border-radius: 15%;
+}
